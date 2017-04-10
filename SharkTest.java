@@ -45,4 +45,11 @@ public class SharkTest{
     assertEquals(true, this.shark.isBellyFull() );
   }
 
+  @Test
+  public void bellyEmptyAfterSwimming() {
+    this.shark.eat(this.person);
+    this.shark.swim();
+    assertEquals(0, this.shark.foodCount() );
+  }
+
 }
