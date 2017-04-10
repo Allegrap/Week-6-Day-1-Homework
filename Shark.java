@@ -6,4 +6,8 @@ public class Shark{
     this.name = name;
     this.belly = new Person[3];
   }
+
+  public String getName(){
+    return this.name;
+  }
 }

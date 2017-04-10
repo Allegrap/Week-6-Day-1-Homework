@@ -6,7 +6,7 @@ public class SharkTest{
   Person person;
 
   @Before
-  public void before(){
+  public void before() {
     shark = new Shark("Sheila");
     person = new Person();
   }
