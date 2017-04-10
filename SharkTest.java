@@ -16,4 +16,9 @@ public class SharkTest{
     assertEquals("Sheila", shark.getName() );
   }
 
+  @Test
+  public void bellyStartsEmpty() {
+    assertEquals(0, shark.foodCount() );
+  }
+
 }
