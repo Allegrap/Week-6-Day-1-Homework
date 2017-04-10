@@ -21,4 +21,10 @@ public class SharkTest{
     assertEquals(0, shark.foodCount() );
   }
 
+  @Test
+  public void canEatPerson() {
+    this.shark.eat(person);
+    assertEquals(1, this.shark.foodCount() );
+  }
+
 }
