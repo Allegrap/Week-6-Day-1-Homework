@@ -36,4 +36,13 @@ public class SharkTest{
     assertEquals(3, this.shark.foodCount() );
   }
 
+  @Test
+  public void bellyIsFull() {
+    for(int i = 0; i < 3; i++){
+      this.shark.eat(this.person);
+    }
+
+    assertEquals(true, this.shark.isBellyFull() );
+  }
+
 }
