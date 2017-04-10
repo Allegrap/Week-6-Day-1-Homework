@@ -20,4 +20,8 @@ public class Shark{
     }
     return count;
   }
+
+  public boolean isBellyFull() {
+    return foodCount() == belly.length;
+  }
 }
