@@ -10,4 +10,10 @@ public class SharkTest{
     shark = new Shark("Sheila");
     person = new Person();
   }
+
+  @Test
+  public void hasName(){
+    assertEquals("Sheila", shark.getName() );
+  }
+
 }
