@@ -24,4 +24,13 @@ public class Shark{
   public boolean isBellyFull() {
     return foodCount() == belly.length;
   }
+
+  public void eat(Person person) {
+    if(isBellyFull()){
+      return;
+    }
+
+    int foodCount = foodCount();
+    this.belly[foodCount] = person;
+  }
 }
