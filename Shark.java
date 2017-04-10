@@ -33,4 +33,10 @@ public class Shark{
     int foodCount = foodCount();
     this.belly[foodCount] = person;
   }
+
+  public void swim() {
+    for(int i = 0; i < belly.length; i++){
+      this.belly[i] = null;
+    }
+  }
 }
