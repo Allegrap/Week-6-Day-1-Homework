@@ -10,4 +10,14 @@ public class Shark{
   public String getName(){
     return this.name;
   }
+
+  public int foodCount(){
+    int count = 0;
+    for(Person person : this.belly){
+      if(person != null){
+        count++;
+      }
+    }
+    return count;
+  }
 }
